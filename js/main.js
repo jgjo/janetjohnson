@@ -5,7 +5,7 @@ function main() {
 
 //    Portfolio Isotope Filter
     $(window).load(function() {
-        var $container = $('#lightbox');
+        var $container = $('#projectsgrid');
         $container.isotope({
             filter: '*',
             animationOptions: {
@@ -14,8 +14,8 @@ function main() {
                 queue: false
             }
         });
-        $('.cat a').click(function() {
-            $('.cat .active').removeClass('active');
+        $('.filter a').click(function() {
+            $('.filter .active').removeClass('active');
             $(this).addClass('active');
             var selector = $(this).attr('data-filter');
             $container.isotope({
