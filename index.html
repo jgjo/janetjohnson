@@ -21,7 +21,7 @@
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/jquery.isotope.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-<!--    <script src="jquery-3.2.1.min.js"></script>-->
+    <!--    <script src="jquery-3.2.1.min.js"></script>-->
 
   </head>
 
@@ -66,19 +66,23 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link" href="#">About
                 <span class="sr-only">(current)</span>
               </a>
             </li>
+<!--
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
             </li>
+-->
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
+<!--
             <li class="nav-item">
-              <a class="nav-link" href="#">Resume</a>
+              <a class="nav-link" href="#">CV</a>
             </li>
+-->
           </ul>
         </div>
       </div>
@@ -90,13 +94,17 @@
         <div class="row align-items-center">
           <div class="col-md-6">
             <div style="padding-top: 60px">
-              <img class="img-fluid" src="img/me1.jpg" alt="">
+              <img class="img-fluid" src="img/me1.jpg" alt="" style="max-height: 450px">
             </div>
           </div>
           <div class="col-md-6">
-            <div class="p-1" style="text-align:center">
+            <div class="p-0" style="text-align:center">
               <h2 class="display-3">Janet Johnson</h2>
-              <p>Hello. Hello.</p>
+              <p>I'm a <strong>UX researcher</strong> pursuing a Master's degree at UC San Diego. My research interests include <strong>inclusive design</strong>, and <strong>mixed reality</strong> and it's applications in healthcare.</p>
+              <p>I am currently advised by Dr. Nadir Weibel at <a href="https://ubicomp.ucsd.edu/">Weibel Lab</a>.</p>
+              <a href="/downloadables/Janet_Johnson_CV.pdf" download>
+                <button type="button" class="btn btn-secondary">Download CV</button>
+              </a>
             </div>
           </div>
         </div>
@@ -104,8 +112,8 @@
     </section>
 
       
-    <!-- Projects -->
-    <section class="bg-light" id="project">
+    <!-- projects -->
+    <section class="bg-light" id="projects">
       <div class="container">
           
         <div class="row align-items-center">
@@ -119,6 +127,7 @@
                     <li>
                         <ol class="type">
                             <li><a href="#" data-filter="*" class="active">All</a></li>
+                            <li><a href="#" data-filter=".current">Ongoing</a></li>
                             <li><a href="#" data-filter=".web">Web Design</a></li>
                             <li><a href="#" data-filter=".mr">Mixed Reality</a></li>
                         </ol>
@@ -128,46 +137,80 @@
           
         <div id="lightbox" class="row align-items-center">
             
-          <div class="col-lg-4 col-md-6 col-sm-6 project-item web">
-            <a class="project-link" href="#">
-              <img class="img-fluid" src="img/hololens.png" alt="">
+          <div class="col-lg-4 col-md-6 col-sm-6 projects-item current mr">
+            <div class=hovershadow>
+            <a class="projects-link" href="">
+              <img class="img-fluid" src="img/icumr.png" alt="">
             </a>
-            <div class="project-caption">
-              <h4 class="display-5">Project #1</h4>
-              <p class="display-5">This is such a long description. But it's necessary.</p>
+            <div class="projects-caption">
+              <h4 class="display-5">MR in the ICU</h4>
+              <p class="display-5 projects-description" >An ethnographic approach to introducing mixed reality in the ICU.</p>
+            </div>
             </div>
           </div>
             
-          <div class="col-lg-4 col-md-6 col-sm-6 project-item mr web">
-            <a class="project-link" href="#">
-              <img class="img-fluid" src="img/hololens.png" alt="">
+          <div class="col-lg-4 col-md-6 col-sm-6 projects-item mr">
+            <div class=hovershadow>
+            <a class="projects-link" href="">
+              <img class="img-fluid" src="img/project1.PNG" alt="">
             </a>
-            <div class="project-caption">
-              <h4 class="display-5">Project #1</h4>
-              <p class="display-5">This is such a long description. But it's necessary.</p>
+            <div class="projects-caption">
+              <h4 class="display-5">Bodylogical MR</h4>
+              <p class="display-5 projects-description" >Visualizing and interacting with population health insights through mixed reality.</p>
+            </div>
             </div>
           </div>
             
-          <div class="col-lg-4 col-md-6 col-sm-6 project-item web">
-            <a class="project-link" href="#">
-              <img class="img-fluid" src="img/hololens.png" alt="">
+          <div class="col-lg-4 col-md-6 col-sm-6 projects-item current mr">
+            <div class=hovershadow>
+            <a class="projects-link" href="">
+              <img class="img-fluid" src="img/holocpr.PNG" alt="">
             </a>
-            <div class="project-caption">
-              <h4 class="display-5">Project #1</h4>
-              <p class="display-5">This is such a long description. But it's necessary.</p>
+            <div class="projects-caption">
+              <h4 class="display-5">HoloCPR</h4>
+              <p class="display-5 projects-description" >A mixed reality application that provides real-time resuscitation(CPR) aid for novices.</p>
+            </div>
             </div>
           </div>
             
-          <div class="col-lg-4 col-md-6 col-sm-6 project-item">
-            <a class="project-link" href="#">
-              <img class="img-fluid" src="img/hololens.png" alt="">
+         <div class="col-lg-4 col-md-6 col-sm-6 projects-item current web">
+            <div class=hovershadow>
+            <a class="projects-link" href="">
+              <img class="img-fluid" src="img/pcori.png" alt="">
             </a>
-            <div class="project-caption">
-              <h4 class="display-5">Project #1</h4>
-              <p class="display-5">This is such a long description. But it's necessary.</p>
+            <div class="projects-caption">
+              <h4 class="display-5" style="font-size: 1rem">Open Communication</h4>
+              <p class="display-5 projects-description" >Amobile intervention to improve patient-centered communication in primary care.</p>
+            </div>
             </div>
           </div>
             
+          <div class="col-lg-4 col-md-6 col-sm-6 projects-item web">
+            <div class=hovershadow>
+            <a class="projects-link" href="">
+              <img class="img-fluid" src="img/trouvaille.png" alt="">
+            </a>
+            <div class="projects-caption">
+              <h4 class="display-5">Trouvaille</h4>
+              <p class="display-5 projects-description" >A platform for locals and travellers to connect and share experiences.</p>
+            </div>
+            </div>
+          </div>
+            
+          <div class="col-lg-4 col-md-6 col-sm-6 projects-item web">
+            <div class=hovershadow>
+            <a class="projects-link" href="">
+              <img class="img-fluid" src="img/microsoft.png" alt="">
+            </a>
+            <div class="projects-caption">
+              <h4 class="display-5">Software Engineer</h4>
+              <p class="display-5 projects-description" >I worked as a Software Engineer at Microsoft India (R&amp;D) from July 2014 - July 2016.</p>
+            </div>
+            </div>
+          </div>
+            
+            
+          
 
         </div>
       </div>
