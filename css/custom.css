@@ -80,9 +80,21 @@ body {
 
 /*PROJECT FILTER CSS*/
 
+.row.filterdivide [class*='col-']:not(:last-child):after {
+  background: #e0e0e0;
+  width: 1px;
+  content: "";
+  display:block;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+}
+
 .filter{
     justify-content: right;
     text-align: center;
+    padding-top: 15px;
 }
 
 .filter a{
@@ -93,6 +105,10 @@ body {
 
 .filter a.active {
     font-weight: 700;
+}
+
+.filter a:hover {
+    text-decoration: underline;
 }
 
 .isotope-item { z-index:  }
