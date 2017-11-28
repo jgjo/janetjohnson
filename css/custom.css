@@ -23,8 +23,8 @@ body {
     text-decoration: underline;
 }
 
-#social a {
-    text-decoration: none;
+#social i {
+/*    text-decoration: none;*/
     color: black; !important
 /*    font-size: 35px;*/
     
@@ -41,7 +41,7 @@ body {
 }
 
 .anchorsection {
-    padding-top: 45px;
+    padding-top: 95px;
 }
 
 /*PROJECTS CSS*/
