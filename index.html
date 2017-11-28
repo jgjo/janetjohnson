@@ -12,6 +12,10 @@
 
     <!-- Bootstrap -->
     <link href="r/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!--  Icons    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    <script src="https://use.fontawesome.com/dbec6e8c99.js"></script>
 
     <!-- custom css -->
     <link href="css/custom.css" rel="stylesheet">
@@ -27,7 +31,6 @@
   <body>
       
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-white">
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
       <div class="container">
         <a class="navbar-brand" href="/"><img class="img-fluid" style="max-width:50px" src="img/logo.png" alt=""></a>
@@ -39,13 +42,18 @@
             <li class="nav-item active">
               <a class="nav-link" href="/">Home</a>
             </li>
+<!--
             <li class="nav-item">
               <a class="nav-link" href="about.html">About
                   <span class="sr-only">(current)</span>
               </a>
             </li>
+-->
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/downloadables/Janet_Johnson_CV.pdf" target="_blank">CV</a>
@@ -55,23 +63,28 @@
       </div>
     </nav>
 
-    </nav>
-
     <!-- Main Banner -->  
     <section id="banner">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-md-6" style="padding-right: 0px">
-            <div style="padding-top: 30px;">
-              <img class="img-fluid" src="img/me1.jpg" alt="" style="max-height: 450px">
+          <div class="col-md-5" style="padding-right: 0px">
+              
+            <div style="padding-top: 20px;">
+              <img class="img-fluid" src="img/me1.jpg" alt="" style="max-height: 600px">
             </div>
+              
           </div>
-          <div class="col-md-6" style=" padding:0px">
+            
+          <div class="col-md-7" style="padding:10px 0px 0px 0px">
             <div class="p-2" style="text-align:center;">
+                
               <h2 class="display-3">Janet Johnson</h2>
-              <p>I'm a <strong>UX Researcher</strong> pursuing a Master's degree in Computer Science at UC San Diego. My research interests include <strong>inclusive design</strong>, and <strong>mixed reality</strong> and it's applications in healthcare.</p>
-              <p>I am currently advised by Dr. Nadir Weibel at <a href="https://ubicomp.ucsd.edu/">Weibel Lab</a>.</p>
-              <a href="/downloadables/Janet_Johnson_CV.pdf" download>
+                
+              <p style="text-align:justify; padding-top: 10px;">I'm an <strong>HCI Researcher</strong> pursuing a Master's degree in Computer Science at UC San Diego. My research interests include <strong>inclusive design</strong>, and <strong>mixed reality</strong> and its applications in healthcare.</p>
+                
+              <p class="text-dark" style="text-align:justify;">I'm currently advised by <a target="_blank" href="https://ubicomp.ucsd.edu/people/weibel/">Dr. Nadir Weibel</a> and am associated with both <a target="_blank" href="https://ubicomp.ucsd.edu/">Weibel Lab</a> and the <a target="_blank" href="http://designlab.ucsd.edu/">Design Lab</a>.</p>
+                
+              <a href="/downloadables/Janet_Johnson_CV.pdf" download style="padding-bottom: 10px">
                 <button type="button" class="btn btn-secondary">Download CV</button>
               </a>
             </div>
@@ -82,7 +95,7 @@
 
       
     <!-- projects -->
-    <section class="bg-light" id="projects" name="projects">
+    <section class="bg-light anchorsection" id="projects" name="projects">
         
       <div class="container">
           
@@ -93,20 +106,20 @@
         </div>
         
         <div class = "row row-fluid filter justify-content-center text-center text-secondary filterdivide">
-            <div class = "col-lg-2 col-md-3 col-sm-3">
+            <div class = "col-lg-2 col-md-2 col-sm-3">
                 <a href="#" data-filter="*" class="active">All</a>
             </div>
-            <div class = "col-lg-2 col-md-3 col-sm-3">
+            <div class = "col-lg-2 col-md-2 col-sm-3">
                 <a href="#" data-filter=".current" >Ongoing</a>
             </div>
-            <div class = "col-lg-2 col-md-3 col-sm-3">
+            <div class = "col-lg-2 col-md-2 col-sm-3">
                 <a href="#" data-filter=".mr">Mixed Reality</a>
             </div>
-            <div class = "col-lg-2 col-md-3 col-sm-3">
+            <div class = "col-lg-2 col-md-2 col-sm-3">
                 <a href="#" data-filter=".health">Health</a>
             </div>
-            <div class = "col-lg-2 col-md-3 col-sm-3">
-                <a href="#" data-filter=".health">Health</a>
+            <div class = "col-lg-2 col-md-2 col-sm-3">
+                <a href="#" data-filter=".web">Web UX</a>
             </div>
         </div>
           
@@ -212,13 +225,47 @@
         </div>
       </div>
     </section>
+      
+      
+    <!-- Contact -->  
+    <section id="contact" class="">
+      <div class="container">
+          
+        <div class="row align-items-center">
+          <div class="col-lg-12 text-center">
+            <h2 class="display-4 sectiontitle">Get In Touch</h2>
+            <p></p>
+          </div>
+        </div>
+          
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-1 col-sm-2" style="padding:10px 0px 0px 0px; text-align: center">
+              <p id="social">
+                  <a href="mailto:jgj007@eng.ucsd.edu"> <i class="fa fa-envelope fa-lg"></i></a>
+              </p>
+          </div>
+            
+          <div class="col-md-1 col-sm-2" style="padding:10px 0px 0px 0px; text-align: center">
+              <p id="social">
+                  <a target="_blank" href="https://www.linkedin.com/in/janet-johnson/"> <i class="fa fa-linkedin fa-2x"></i></a>
+              </p>
+          </div>
+          
+          <div class="col-md-1 col-sm-2" style="padding:10px 0px 0px 0px; text-align: center">
+              <p id="social">
+                  <a target="_blank" href="https://github.com/jgjo/"> <i class="fa fa-github fa-2x"></i></a>
+              </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 
     <!-- Footer -->
     <footer class="py-3 bg-white">
       <div class="container">
-        <p class="m-0 text-center text-secondary">&copy; JanetJohnson</p>
+        <p class="m-0 text-center text-secondary">JanetJohnson</p>
       </div>
     </footer>
 

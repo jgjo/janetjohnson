@@ -23,6 +23,13 @@ body {
     text-decoration: underline;
 }
 
+#social a {
+    text-decoration: none;
+    color: black;
+/*    font-size: 35px;*/
+    
+}
+
 
 /*GENERIC SECTION*/
 
@@ -31,6 +38,10 @@ body {
     font-size: 2rem;
     padding-top: 40px;
     padding-bottom: 5px;
+}
+
+.anchorsection {
+    padding-top: 45px;
 }
 
 /*PROJECTS CSS*/
@@ -96,6 +107,7 @@ body {
     justify-content: right;
     text-align: center;
     padding-top: 25px;
+    padding-bottom: 15px;
 }
 
 .filter a{

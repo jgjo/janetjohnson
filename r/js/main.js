@@ -1,7 +1,10 @@
 function main() {
-
 (function () {
    'use strict';
+//    
+//    $('html,body').animate({
+//      scrollTop: $(window.location.hash).offset().top
+//    });
 
 //    Portfolio Isotope Filter
     $(window).load(function() {
