@@ -60,6 +60,11 @@ body {
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0,0.2);
 }
 
+#projects a {
+    color: inherit;
+    text-decoration: none;
+}
+
 #projects .projects-item .projects-link {
     position: relative;
     display: block;
@@ -152,3 +157,10 @@ body {
     -moz-transition-property: -moz-transform, opacity;
     transition-property: transform, opacity;
 }
+
+/*PROJECT PAGE CSS*/
+#projecttitle a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
