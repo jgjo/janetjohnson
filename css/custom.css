@@ -19,6 +19,11 @@ body {
     }
 }
 
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+
 /*NAVBAR*/
 
 .navbar-nav > li{
