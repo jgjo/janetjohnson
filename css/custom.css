@@ -7,6 +7,12 @@ body {
   body {
     padding-top: 56px;
   }
+    
+    #projectcontent section {
+        padding:35px
+    }
+}
+
 }
 
 /*NAVBAR*/
