@@ -9,10 +9,14 @@ body {
   }
     
     #projectcontent section {
-        padding:35px
+        padding:40px
     }
 }
 
+@media (max-width: 991px) {
+    #projectcontent section {
+        padding: 0px;
+    }
 }
 
 /*NAVBAR*/
