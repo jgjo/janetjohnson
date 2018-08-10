@@ -19,11 +19,6 @@ body {
     }
 }
 
-img.center {
-    display: block;
-    margin: 0 auto;
-}
-
 /*NAVBAR*/
 
 .navbar-nav > li{
@@ -56,7 +51,15 @@ img.center {
 }
 
 .anchorsection {
-    padding-top: 95px;
+    padding-top: 45px;
+    padding-bottom: 15px;
+}
+
+hr.betweensection {
+    border: 0;
+    height: 0px;
+    background: rgba(0,0,0,0.2);
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
 /*PROJECTS CSS*/
