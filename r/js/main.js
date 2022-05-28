@@ -5,6 +5,12 @@ function main() {
 //    $('html,body').animate({
 //      scrollTop: $(window.location.hash).offset().top
 //    });
+    
+    $(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+    });
 
 //    Portfolio Isotope Filter
     $(window).load(function() {
